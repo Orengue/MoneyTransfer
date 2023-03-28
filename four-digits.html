@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Digits CODE - SignUp</title>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+        <h1>Create your four digits CODE</h1>
+        <form action="connect.php" method="POST" id="form2">
+          <div class="digits-box">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+          </div>
+          <input type="submit" value="submit">
+        </form>
+        
+
+
+        <script>
+            const inputFields = document.querySelectorAll('input[type="text"]');
+    for (let i = 0; i < inputFields.length; i++) {
+      inputFields[i].addEventListener('keyup', function(event) {
+        const currentInput = event.target;
+        const currentInputValue = currentInput.value;
+        const currentInputIndex = Array.prototype.indexOf.call(inputFields, currentInput);
+        if (currentInputValue.length === currentInput.maxLength) {
+          if (currentInputIndex !== inputFields.length - 1) {
+            inputFields[currentInputIndex + 1].focus();
+          } else {
+            currentInput.blur();
+          }
+        }
+      });
+    }
+    
+        </script>
+</body>
+</html>
