@@ -12,14 +12,15 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Retrieve data from form 1
-if (isset($_POST['firstname','lastname'])) {
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $phone = $_POST['phonenumber'];
-    // Insert data into database entity
-    $sql = "INSERT INTO user (firstname, lastname, phone) VALUES ('$firstname', '$lastname', '$phone')";
+// Get values from form
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+$phone = $_POST['phonenumber'];
+$pinCode = $_POST['digit1'] . $_POST['digit2'] . $_POST['digit3'] . $_POST['digit4'];
 
+
+// Insert data into table
+$sql = "INSERT INTO user (firstname, lastname, phone, code) VALUES ('$firstname', '$lastname', '$phone', '$pinCode')";
 
 if (mysqli_query($conn, $sql)) {
     echo "Data inserted successfully";
