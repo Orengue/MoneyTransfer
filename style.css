@@ -5,70 +5,119 @@
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
 }
-.body{
+body{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #f7f7f7;
+    background: rgb(239,200,139);
+    background: linear-gradient(0deg, rgba(239,200,139,1) 0%, rgba(244,227,178,1) 31%, rgba(246,246,246,1) 99%);
 }
-/**
-.wrapper{
+
+.wrapper
+{
     background: #fff;
     width: 450px;
-    border-radius: 16px;
-    box-shadow: -1px 5px 66px -26px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px 5px 66px -26px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 5px 66px -26px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 47px -5px rgba(0,0,0,0.49);
+-webkit-box-shadow: 0px 2px 47px -5px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 2px 47px -5px rgba(0,0,0,0.49);
+
+border-radius: 16px ;
 }
-.form{
+
+.form
+{
     padding: 25px 30px;
 }
-.form header{
-    font-size: 47px;
-    font-weight: 800;
-    padding-bottom: 20px;
-    border-bottom: 1px solid grey;
+.form header
+{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
 }
 .form form
 {
-    font-size: 20px;
     margin: 20px 0;
 }
-.form form input
+
+.form form .error-txt
+{
+    display: none;
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form form .field 
 {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+}
+
+.form form .field input
+{
     height: 40px;
     width: 100%;
-    font-size: 14px;
-    padding: 0 10px;
+    font-size: 16px;
+    padding: 0 10px; 
+    border: 1px solid #ccc;
     border-radius: 5px;
-    border: 1px solid;
 }
 
-
-
-.four-digits{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-    background: #f7f7f7;
-}
-.digits-box
+.form form .field label
 {
-    display: flex;
+    margin-bottom: 2px;
 }
-.digits-box input
+.form .submit
+{
+    margin-top: 10px;
+}
+
+.form .submit input
+{
+    height: 40px;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    font-weight: 800;
+    background: #fff2ff;
+    padding: 0 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form .link
+{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+
+}
+
+
+.form .four-digits h1
+{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.form .four-digits .digits-box
+{
+    text-align: center;
+
+}
+.form .four-digits .digits-box input
 {
     width: 50px;
+    font-size: 18px;
     padding: 10px;
     text-align: center;
-    margin: 2px;
-    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #938685;
 }
-
-**/

@@ -1,0 +1,227 @@
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background: rgb(239,200,139);
+    background: linear-gradient(0deg, rgba(239,200,139,1) 0%, rgba(244,227,178,1) 31%, rgba(246,246,246,1) 99%);
+}
+
+.wrapper .user-page
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.wrapper .user-page .user-info
+{
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+.wrapper .user-page .user-info .greetings
+{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper .user-page .user-info .user-balance
+{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    padding: 40px;
+}
+.wrapper .user-page .user-info .user-balance .balance
+{
+    padding: 20px;
+    font-size: 40px;
+}
+.wrapper .user-page .user-board p
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 16px;
+    width: 100%;
+}
+.wrapper .user-page .user-board p:hover
+{
+    box-shadow: 0px -1px 34px -17px rgba(0,0,0,0.52);
+-webkit-box-shadow: 0px -1px 34px -17px rgba(0,0,0,0.52);
+-moz-box-shadow: 0px -1px 34px -17px rgba(0,0,0,0.52);
+
+cursor: pointer;
+}
+.wrapper .user-page .user-board
+{
+    margin-top: 80px;
+    padding: 50px;
+    width: 500px;
+    font-size: 18px;
+    height: 480px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0px 2px 47px -5px rgba(0,0,0,0.49);
+-webkit-box-shadow: 0px 2px 47px -5px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 2px 47px -5px rgba(0,0,0,0.49);
+
+
+}
+.wrapper .user-page .user-board h1
+{
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.wrapper .user-page .user-board h3
+{
+    
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    border-top: 1px solid#e6e6e6;
+    margin-top: 10px;
+}
+
+.wrapper .user-page .user-notifications
+{
+    margin-top: 80px;
+    padding: 20px;
+    width: 450px;
+    background: #1F1F1F;
+    font-size: 18px;
+    height: 460px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0px 2px 47px -5px rgba(0,0,0,0.49);
+-webkit-box-shadow: 0px 2px 47px -5px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 2px 47px -5px rgba(0,0,0,0.49);
+}
+.wrapper .user-page .user-notifications h1
+{
+    color: #940000;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.wrapper .user-page .user-notifications .notifications
+{
+    padding-top: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+.wrapper .user-page .user-notifications .notifications p
+{
+    padding: 10px;
+    border: 1px solid #ffff;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    background: #ccc;
+}
+
+
+
+
+.send-money-page
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.send-money-page header
+{
+     font-size: 30px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+}
+.send-money-page .send-money-current
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.send-money-page form 
+{
+    text-align: left;
+}
+.send-money-page form .field
+{
+    padding: 15px;
+}
+.send-money-page form .field input
+{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.send-money-page form .submit
+{
+    text-align: center;
+}
+.send-money-page form .submit input
+{
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-size: 17px;
+    font-weight: 800;
+    background: #fff2ff;
+    padding: 0 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.transactions-history-page
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.transactions-history-page header
+{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+}
+.transactions-history-page table
+{
+    border-collapse: collapse;
+    border-spacing: 0 12px;
+}
+.transactions-history-page table th
+{
+    padding: 10px;
+}
+.transactions-history-page table td
+{
+    padding: 20px;
+}
+.transactions-history-page table tbody tr
+{
+    border: 1px solid #1F1F1F;
+    border-radius: 5px;
+}
