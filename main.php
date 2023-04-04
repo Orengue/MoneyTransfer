@@ -65,10 +65,10 @@ if(!isset($_SESSION['user_id'])){
 			<div class="send-money-current">
 				You have actually <?php echo $row['balance']?> FCFA
 			</div>
-			<form action="#">
+			<form id = "transaction-form" action="#">
 				<div class="field" >
                     <label for="phone-number">Receiver Phone Number:</label>
-                    <input type="tel" pattern="\d{2} \d{2} \d{2} \d{2} \d{2}" placeholder="Receiver Phone Number" id="phone-number" name="phonenumber" required><br>
+                    <input type="text" placeholder="Receiver Phone Number" id="phone-number" name="phonenumber" required><br>
                   </div>
 				  <div class="field" >
                     <label for="phone-number">Money to send:</label>
@@ -122,7 +122,7 @@ if(!isset($_SESSION['user_id'])){
 	</div>
 
 
-
+	<script src="send-money.js"></script>
 	<script>
 		document.getElementById("send-money").addEventListener("click", function() {
 		  document.getElementById("send-money-page").scrollIntoView({ behavior: "smooth" });
