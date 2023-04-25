@@ -9,6 +9,7 @@ body a{
     text-decoration: none;
 }
 
+
 .wrapper .user-page
 {
     position: relative;
@@ -21,7 +22,7 @@ body a{
     background-color: #000;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 40px;
-    background: rgba(204, 119, 39, 0.96);/*url("imgs/vache2.png");
+    background-color: rgba(242, 242, 242, 0.92);/*url("imgs/vache2.png");
     background-position: center bottom;
 			background-repeat: no-repeat;
             background-size: 200px;*/
@@ -30,28 +31,34 @@ body a{
 {
     width: 100%;
     text-align: left;
-    color: #ffff;
+    color: rgba(69, 67, 67, 0.92);
     padding-top: 100px;
     margin-left: 360px;
 }
 .wrapper .user-page .user-info .greetings
 {
     font-size: 60px;
-    color: #fff;
+    color: rgba(69, 67, 67, 0.92);;
     font-weight: 700;
     padding-left: 40px;
     
 }
 .wrapper .user-page .user-info .user-balance
 {
-    color: #fff;
+    color: rgba(69, 67, 67, 0.92);;
     font-size: 40px;
     font-weight: 800;
     padding: 40px;
+    
 }
 .wrapper .user-page .user-info .user-balance .balance
 {
     font-size: 40px;
+    display: none;
+}
+.user-balance .fa-eye
+{
+    cursor: pointer;
 }
 .wrapper .user-page .user-board p
 {

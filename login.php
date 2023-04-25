@@ -4,11 +4,16 @@
 	<title>Login Page</title>
 </head>
 <body>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style3.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,400;1,300;1,400&family=Lobster&family=Lora:ital,wght@0,600;0,700;1,400;1,500;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
 	
+<div class="welcome" id="welcome">
+    <h1>Akwaba to</h1>
+    <p class="milk-logo">milky <img src="imgs/bottle.png" alt=""></p>
+    <p class="milk-citation">milky transfer money: Tu as tout le lait.</p>
+  </div>
     <div class="wrapper">
             <section class="form login">
                 <header>Login Page</header>
@@ -51,6 +56,18 @@
     <script src="login.js"></script>
 
     <script>
+
+  
+window.addEventListener('load', function() {
+  // Get the welcome message element
+  var welcomeMsg = document.getElementById('welcome');
+
+  // Hide the welcome message after 3 seconds
+  setTimeout(function() {
+    welcomeMsg.classList.add('hidden');
+  }, 2000); // 3000 milliseconds = 3 seconds
+});
+
       // Your JavaScript code goes here
       const inputFields = document.querySelectorAll('.four-digits input[type="text"]');
       for (let i = 0; i < inputFields.length; i++) {

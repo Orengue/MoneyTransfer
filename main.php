@@ -21,7 +21,7 @@ if(!isset($_SESSION['user_id'])){
     <div class="wrapper">
 		<section class="user-page" id="user-page">
 			<div class="user-board">
-				<h1 id="home-view">milky</h1>
+				<h1 id="home-view">milky <img  style= "width: 40px; filter: invert(1);" src="imgs/bottle.png" alt=""></h1>
 				<p id="send-money">Send money</p>	
 				<p id="transaction-history">View transactions history</p>
 				<p><a href="logout.php">Logout</a></p>	
@@ -46,6 +46,7 @@ if(!isset($_SESSION['user_id'])){
 				<div class="user-balance">
 					<p>Your current balance is : </p>
 					<div class="balance"><?php echo $row['balance']?> FCFA</div>
+					<i id="toggleEye" class="fas fa-eye"></i>
 				</div>
 			</div>
 			<div class="user-notifications">
